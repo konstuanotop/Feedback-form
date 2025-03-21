@@ -1,27 +1,33 @@
 .form {
     max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 100%;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+
+    .buttonsContainer {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+
+        button {
+            flex: 1;
+        }
+    }
 }
 
-.formGroup {
-    margin-bottom: 15px;
 
-    label {
-        display: block;
-        margin-bottom: 5px;
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
     }
 
-    textarea {
-        width: 100%;
-        padding: 8px;
-        box-sizing: border-box;
-    }
-
-    .error {
-        color: red;
-        font-size: 0.875em;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

@@ -1,4 +1,25 @@
-.inputField {
+// .textAreaField {
+//     margin-bottom: 15px;
+
+//     label {
+//         display: block;
+//         margin-bottom: 5px;
+//     }
+
+//     textarea {
+//         width: 100%;
+//         padding: 8px;
+//         box-sizing: border-box;
+//     }
+
+//     .error {
+//         color: red;
+//         font-size: 0.875em;
+//     }
+// }
+
+
+.textAreaField {
     margin-bottom: 20px;
 
     label {
@@ -8,7 +29,9 @@
         color: #555;
     }
 
-    input {
+    input,
+    select,
+    textarea {
         box-sizing: border-box;
         width: 100%;
         padding: 12px;
@@ -22,6 +45,11 @@
             box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
             outline: none;
         }
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 100px;
     }
 
     .error {

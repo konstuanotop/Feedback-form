@@ -5,12 +5,13 @@ interface InputFieldProps {
     name: string;
     type: string;
     value: string;
+    autocomplete: string;
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
     onBlur: (e: React.FocusEvent<HTMLInputElement>) => void;
     error?: string;
 }
 
-const InputField: React.FC<InputFieldProps> = ({id, name, type, value, onChange, onBlur, error}) => {
+const InputField: React.FC<InputFieldProps> = ({id, name, type, value, autocomplete, onChange, onBlur, error}) => {
 
 
 
@@ -22,6 +23,7 @@ const InputField: React.FC<InputFieldProps> = ({id, name, type, value, onChange,
                 name={name}
                 type={type}
                 value={value}
+                autoComplete={autocomplete}
                 onChange={onChange}
                 onBlur={onBlur}
             />
