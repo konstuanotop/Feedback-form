@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to React Router!
 
 A modern, production-ready template for building full-stack React applications using React Router.
@@ -85,3 +86,6 @@ This template comes with [Tailwind CSS](https://tailwindcss.com/) already config
 ---
 
 Built with ❤️ using React Router.
+=======
+# Feedback-form
+>>>>>>> 04509056725de8ea0bde01279c903c683db164bb
